@@ -32,7 +32,7 @@ class GenerateState extends FlxState
 		//mapHeight = Std.int(FlxG.height);
 		
 		// 创建一个sprite用来显示地图
-		mapSprite = new FlxSprite(0, 0);
+		mapSprite = new FlxSprite(FlxG.width / 2 - (mapWidth / 2), FlxG.height / 2 - (mapHeight / 2));
 		mapSprite.makeGraphic(mapWidth, mapHeight, FlxColor.BLACK);
 		// 用来设置什么的呢?
 		mapSprite.scale.set(TILE_SIZE, TILE_SIZE);

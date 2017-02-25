@@ -16,7 +16,7 @@
 	<!--------------------------------WINDOW SETTINGS------------------------------->
 	
 	<!--These window settings apply to all targets-->
-	<window width="1280" height="720" fps="50" background="#000000" hardware="true" vsync="true" />
+	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
 	
 	<!--Web-specific-->
 	<window if="web" orientation="portrait"  />
@@ -30,7 +30,7 @@
 	<!--------------------------------PATHS SETTINGS-------------------------------->
 
     <set name="BUILD_DIR" value="export" if="android"/>
-    <set name="BUILD_DIR" value="D:\Development\Tomcat\apache-tomcat-8.0.5\webapps\ROOT" if="flash"/>
+    <set name="BUILD_DIR" value="export" if="flash"/>
     <!--<set name="BUILD_DIR" value="/Users/zhoupengfang/Documents/bin/tomcat/webapps/ROOT" />-->
 
 

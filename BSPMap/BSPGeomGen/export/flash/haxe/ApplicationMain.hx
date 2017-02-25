@@ -38,6 +38,14 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/player.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/tiles.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/music/music-goes-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
 		
@@ -60,6 +68,122 @@ class ApplicationMain {
 		
 		urls.push ("Arial");
 		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("flixel/flixel-ui/img/box.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_arrow_down.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_arrow_left.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_arrow_right.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_arrow_up.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_thin.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/button_toggle.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/check_box.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/check_mark.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/chrome.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/chrome_flat.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/chrome_inset.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/chrome_light.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/dropdown_mark.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/finger_big.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/finger_small.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/hilight.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/invis.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/minus_mark.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/plus_mark.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/radio.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/radio_dot.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/swatch.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/tab.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/img/tab_back.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("flixel/flixel-ui/xml/defaults.xml");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("flixel/flixel-ui/xml/default_loading_screen.xml");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("flixel/flixel-ui/xml/default_popup.xml");
+		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		
@@ -122,14 +246,14 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "47",
-			company: "HaxeFlixel",
-			file: "BSPGeomGen",
+			build: "108",
+			company: "aishiyou",
+			file: "PtSanguo",
 			fps: 60,
-			name: "BSPGeomGen",
+			name: "三国群英之兵临天下",
 			orientation: "portrait",
-			packageName: "com.example.myapp",
-			version: "0.0.1",
+			packageName: "com.putao.PtSanguo",
+			version: "v4.0.5b",
 			windows: [
 				
 				{
@@ -144,7 +268,7 @@ class ApplicationMain {
 					parameters: "{}",
 					resizable: true,
 					stencilBuffer: true,
-					title: "BSPGeomGen",
+					title: "三国群英之兵临天下",
 					vsync: true,
 					width: 640,
 					x: null,
