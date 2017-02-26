@@ -125,7 +125,7 @@ class GenerateState extends FlxState
 	function drawRoom(room:Rectangle):Void {
 		rooms.push(room);
 		mapData.fillRect(room, FlxColor.WHITE);
-	}
+	} 
 	
 	function drawHalls(hallRect:Array<Rectangle>):Void {
 		for (hallway in hallRect) {

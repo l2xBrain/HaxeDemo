@@ -28,8 +28,11 @@ class PlayState extends FlxState
 	override public function create():Void
 	{
 		map = new FlxTilemap();
+		// CSV代表(comma-separated values)逗号分隔符，以纯文本形式存储数据
+		// bitmapToCSV是将bitmap转换为CSV,并且黑色像素设置为固体，非黑色像素设置为非碰撞
 		var csvData:String = FlxStringUtil.bitmapToCSV(GenerateState.mapData);
 		
+		// 这里使用tile填满地图的固体部分
 		map.loadMap(csvData, "assets/images/tiles.png", TILE_SIZE, TILE_SIZE, 0);
 		add(map);
 		
@@ -59,6 +62,7 @@ class PlayState extends FlxState
 	override public function update():Void
 	{
 		super.update();
+		// 检测是否碰撞
 		FlxG.collide(player, map);
 		
 		if (FlxG.keys.justReleased.SPACE)
