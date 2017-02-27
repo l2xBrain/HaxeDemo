@@ -8,16 +8,16 @@
     <movie fps="60" />
     <movie width="640" />
     <movie height="480" />
-    <movie version="1" />
+    <movie version="0" />
     <movie minorVersion="0" />
     <movie platform="Lime" />
     <movie background="000000" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
-    <class path="D:\sourceApp\Haxe\haxe\lib\flixel\3,3,11" />
-    <class path="D:\sourceApp\Haxe\haxe\lib\openfl\3,3,8" />
-    <class path="D:\sourceApp\Haxe\haxe\lib\lime\2,6,8" />
+    <class path="E:\Haxe\haxe\lib\flixel\3,3,11" />
+    <class path="E:\Haxe\haxe\lib\openfl\3,3,8" />
+    <class path="E:\Haxe\haxe\lib\lime\2,6,8" />
     <class path="source" />
     <class path="export\flash\haxe" />
   </classpaths>

@@ -40,10 +40,8 @@ class MenuState extends FlxState
 	
 	private function onTempClick():Void
 	{
-		trace("点击了tempClic");
 		// This is temp substate, it will be destroyed after closing
 		var tempState:SubState = new SubState(subStateColor);
-		
 		tempState.isPersistent = false;
 		openSubState(tempState);
 		
@@ -68,6 +66,7 @@ class MenuState extends FlxState
 
 	override public function update():Void
 	{
+		trace("update");
 		// We need to deactivate these buttons if there is _substate and this state is keeps updating
 		openpersistentBtn.active = (_requestedSubState == null);
 		openTempBtn.active = (_requestedSubState == null);

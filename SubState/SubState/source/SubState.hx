@@ -28,6 +28,10 @@ class SubState extends FlxSubState
 	
 	override public function create():Void
 	{
+		if (isPersistent){
+			// 保持一直的更新,默认是false
+			persistentUpdate = true;
+		}
 		super.create();
 		closeBtn = new FlxButton(FlxG.width * 0.5 - 40, FlxG.height * 0.5, "Close", onClick);
 		add(closeBtn);
@@ -51,6 +55,7 @@ class SubState extends FlxSubState
 			// if you will update parent state then you will update buttons in it,
 			// so you need to deactivate buttons in parent state
 			_parentState.persistentUpdate = !_parentState.persistentUpdate;
+			trace(_parentState.persistentUpdate);
 		}
 	}
 	
@@ -60,30 +65,32 @@ class SubState extends FlxSubState
 		{
 			// you can keep drawing parent state if you want to 
 			// (for example, when substate have transparent background color)
+			
 			_parentState.persistentDraw = !_parentState.persistentDraw;
+			trace(_parentState.persistentDraw);
 		}
 	}
 	
 	override public function update():Void
 	{
-		
-		//if (testSprite.x > FlxG.width)
-		//{
-			//testSprite.x = -testSprite.width;
-		//}
+		super.update();
+		if (testSprite.x > FlxG.width)
+		{
+			testSprite.x = -testSprite.width;
+		}
 	}
 	
-	private function onClick() 
+	private function onClick():Void
 	{
 		// if you will pass 'true' (which is by default) into close() method then this substate will be destroyed
 		// but when you'll pass 'false' then you should destroy it manually
-		trace("click");
 		close();
 	}
 	
 	// This function will be called by substate right after substate will be closed
+	
 	public static function onSubstateClose():Void
 	{
-		FlxG.fade(FlxG.BLACK, 1, true);
+		//FlxG.fade(FlxG.BLACK, 1, true);
 	}
 }
